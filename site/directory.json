@@ -1,0 +1,28 @@
+[
+  {
+    "section" : "Protocol Labs Sites",
+    "links" : [
+      ["Protocol Labs", "/ipns/protocol.ai"],
+      ["IPFS", "/ipns/ipfs.io"],
+      ["Filecoin", "/ipns/filecoin.io"],
+      ["libp2p", "/ipns/libp2p.io"],
+      ["Multiformats", "/ipns/multiformats.io"],
+      ["IPLD", "/ipns/ipld.io"]
+    ]
+  },
+  {
+    "section" : "Personal Sites",
+    "links" : [
+      ["peat dot org", "/ipns/peat.org"]
+    ]
+  },
+  {
+    "section" : "OS ISOs",
+    "links" : [
+      ["Ubuntu 19.04 Desktop (amd64)", "/ipfs/QmS3NGMC34eWtxc1xrd92Z1e1you5sbyazhnhXh4GyTGGr" ],
+      ["Ubuntu 19.04 Live Server (amd64)", "/ipfs/QmVXe5XBeStHTXsRfhBD7Cf6M81nyodfT7rZhQBFHWtPrj"],
+      ["Debian 10.1.0 Net Install (amd64)", "/ipfs/QmUH9BB2xKGuvjfeoA2TQ72HZ3o5QbWQRaxYyhB2VxUSWS"],
+      ["FreeBSD 12.0 Net Install (amd64)", "/ipfs/QmbyEvhsJSoCJtu1g5V5RP3t1TpBTY7YsWocjwbSCYNtmq"]
+    ]
+  }
+]

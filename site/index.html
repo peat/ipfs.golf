@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link href="fira_code.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+    <title>ipfs.golf ⛳️</title>
+  </head>
+
+  <body>
+    <p>
+      Welcome to <em>ipfs.golf</em>, an open source directory of interesting IPFS content.
+    </p>
+    <p>
+      Want to add a link? <a href="https://github.com/peat/ipfs.golf">Contribute to the repo</a>! 👍
+    </p>
+
+    <div id="directory"></div>
+
+    <script>
+      function listSection(item, index) {
+        var root = document.getElementById("directory");
+
+        // create and attach the title of the section
+        var sectionTitle = document.createElement("h3");
+        sectionTitle.textContent = item.section;
+        root.appendChild(sectionTitle);
+
+        // create a table to hold the entries
+        var sectionTable = document.createElement("table");
+
+        // populate the table with entries
+        item.links.forEach(item => {
+          var row = sectionTable.insertRow(-1);
+
+          var name = row.insertCell(0);
+          name.textContent = item[0];
+          name.className = "name";
+
+          var path = row.insertCell(1);
+          path.textContent = item[1];
+          path.className = "path";
+        });
+
+        root.appendChild(sectionTable);
+      }
+
+      fetch("directory.json")
+      .then(res => res.json())
+      .then((out) => {
+        out.forEach(listSection)
+      })
+      .catch(err => { throw err });
+    </script>
+
+  </body>
+</html>
