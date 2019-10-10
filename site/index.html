@@ -32,13 +32,18 @@
         item.links.forEach(item => {
           var row = sectionTable.insertRow(-1);
 
+          var link = document.createElement("a");
+          link.title = item[0];
+          link.href = item[1];
+	  link.textContent = item[1];
+
           var name = row.insertCell(0);
           name.textContent = item[0];
           name.className = "name";
 
           var path = row.insertCell(1);
-          path.textContent = item[1];
           path.className = "path";
+	  path.appendChild(link);
         });
 
         root.appendChild(sectionTable);
