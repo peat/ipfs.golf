@@ -16,6 +16,6 @@ body {
 .bold { font-weight: 700; }
 .variable { font-family: 'Fira Code VF'; font-variation-settings: 'wght' 400; }
 
-.path { font-weight: 500; }
-.path:hover { text-decoration: underline; }
+.path { font-weight: 300; }
+.name { font-weight: 500; }
 td { padding: 0em 1em; }
