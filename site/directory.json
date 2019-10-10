@@ -24,5 +24,11 @@
       ["Debian 10.1.0 Net Install (amd64)", "/ipfs/QmUH9BB2xKGuvjfeoA2TQ72HZ3o5QbWQRaxYyhB2VxUSWS"],
       ["FreeBSD 12.0 Net Install (amd64)", "/ipfs/QmbyEvhsJSoCJtu1g5V5RP3t1TpBTY7YsWocjwbSCYNtmq"]
     ]
+  },
+  {
+    "section" : "Archives",
+    "links" : [
+        ["textfiles.com", "/ipfs/QmNoscE3kNc83dM5rZNUC5UDXChiTdDcgf16RVtFCRWYuU"]
+    ]
   }
 ]
